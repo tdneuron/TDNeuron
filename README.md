@@ -49,3 +49,6 @@ TDNeuron is released under a *Creative Commons Non-commercial* license. If you w
 To get you started with, we offer you with this repository a gentle introduction to how the framework is implemented. We are assuming that you are already proficient with TouchDesigner and that know the basics of GLSL and shaders. 
 
 We believe that knowledge should be shared. We hope that TDNeuron can help others in their first steps in machine learning. We look forward to learn from you as well and to see how far we can take this platform. 
+
+Tim Gerritsen and Darien Brito
+<tim@mannetje.org> <info@darienbrito.com>
