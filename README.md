@@ -1,8 +1,8 @@
-### TDNeuron
+#TDNeuron
 
 Welcome to our website. Here you will find material related to implementing machine learning within [Derivative's TouchDesigner](https://www.derivative.ca/)
 
-### Why use TDNeuron?
+## Why use TDNeuron?
 
 There are several deep learning libraries and frameworks available today. Why yet another one, such as TDNeuron? Here are some of the reasons why we think that TDNeuron is a fruitful endeavour.
 
