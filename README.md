@@ -34,7 +34,7 @@ The following deep learning layers are currently implemented:
 
 We have made sure that TDNeuron is as modular as possible, which makes it easy to implement new layers if needed.
 
-## TouchDesigner Native
+## TouchDesigner native
 
 Since TDNeuron is fully build from scratch in TouchDesigner, with its own custom-made shaders and UI, everything is native to the program. There are no libraries to import and nothing new to learn outside the scope of TD. This allows you to quickly prototype models without leaving the comfort of your favourite software and to train them and share them with your colleagues, fit to function in your real-time projects.
 
