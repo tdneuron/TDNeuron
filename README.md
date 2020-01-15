@@ -1,6 +1,6 @@
 # TDNeuron
 
-Welcome to our website. Here you will find material related to implementing machine learning within [Derivative's TouchDesigner](https://www.derivative.ca/)
+Welcome to our repository. Here you will find material on how to us TDNeuron to implement machine learning within [Derivative's TouchDesigner](https://www.derivative.ca/)
 
 ## Why use TDNeuron?
 
