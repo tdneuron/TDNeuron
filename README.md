@@ -12,7 +12,7 @@ TDNeuron was created initially out of our desire to self-learn the rudiments of 
 
 ## Visual modelling
 
-The modelling interface of TDNeuron is completely TouchDesigner-based. It uses the regular controls and the same patching mechanisms, like those one uses when creating a regular network. In addition, the 'nodes' in the model show extended realtime information about the data flowing through the layer. This gives great insights on what the machine is actually learning at any given time or for bug-fixing. Since TouchDesigner is a visually oriented programming environment, there is no need to code a single letter with TDNeuron, in order to build a deep learning model.
+The modelling interface of TDNeuron is completely TouchDesigner-based. It uses the regular controls and the same patching mechanisms, like those one uses when creating a regular network. In addition, the 'nodes' in the model show extended realtime information about the data flowing through the layer. This gives great insights on what the machine is actually learning at any given time or for bug-fixing. Since TouchDesigner is a visually oriented programming environment, there is no need to code a single letter with TDNeuron to build a deep learning model.
 
 ## GPU powered
 
