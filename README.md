@@ -48,7 +48,7 @@ TDNeuron works **only on Windows**. We use compute shaders, which are not suppor
 
 ## Final words
 
-We assume that you are already proficient with TouchDesigner. To get you started with TDNeuron, we offer a help module that you may consult at any point. We offer as well a gentle *Introduction to machine learning* that you may want to follow. In there, we built a simplified version of a neural network with CHOPs, with step by step explanations. 
+We assume that you are already proficient with TouchDesigner. To get you started with TDNeuron, we offer a help module that you may consult at any point. Along with it, we offer a gentle *Introduction to machine learning* that you may want to follow as well. In there, we built a simplified version of a neural network with CHOPs, with step by step explanations. 
 
 To use TDNeuron you do not necessarily need to know GLSL or shaders, although to make the most out of it you need to have a fair understanding of the basics.
 
