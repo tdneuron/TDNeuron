@@ -42,6 +42,10 @@ Since TDNeuron is fully build from scratch in TouchDesigner, with its own custom
 
 TDNeuron is released under a *Creative Commons Non-commercial* license. If you want to use TDNeuron in commercial projects, please contact [licenses@tdneuron.com](mailto:licenses@tdneuron.com) for specific licenses.
 
+## Support
+
+TDNeuron works **only on Windows**. We use compute shaders, which are not supported in MacOS. 
+
 ## Final words
 
 We assume that you are already proficient with TouchDesigner. To get you started with TDNeuron, we offer a help module that you may consult at any point. We offer as well a gentle *Introduction to machine learning* that you may want to follow. In there, we built a simplified version of a neural network with CHOPs, with step by step explanations. 
