@@ -44,8 +44,13 @@ TDNeuron is released under a *Creative Commons Non-commercial* license. If you w
 
 ## Final words
 
-![something](someimage.jpg)
+We assume that you are already proficient with TouchDesigner. To get you started with TDNeuron, we offer a help module that you may consult at any point. We offer as well a gentle *Introduction to machine learning* that you may want to follow. In there, we built a simplified version of a neural network with CHOPs, with step by step explanations. 
 
-To get you started with, we offer you with this repository a gentle introduction to how the framework is implemented. We are assuming that you are already proficient with TouchDesigner and that know the basics of GLSL and shaders. 
+To use TDNeuron you do not necessarily need to know GLSL or shaders, although to make the most out of it you need to have a fair understanding of the basics.
 
-We believe that knowledge should be shared. We hope that TDNeuron can help others in their first steps in machine learning. We look forward to learn from you as well and to see how far we can take this platform. 
+We strongly believe that knowledge should be shared and hope that TDNeuron can help others in their first steps in machine learning. We look forward to learn from you and see how far we can take this platform together.
+
+Sincerely,  
+Tim and Darien
+
+
