@@ -53,8 +53,3 @@ We assume that you are already proficient with TouchDesigner. To get you started
 To use TDNeuron you do not necessarily need to know GLSL or shaders, although to make the most out of it you need to have a fair understanding of the basics.
 
 We strongly believe that knowledge should be shared and hope that TDNeuron can help others in their first steps in machine learning. We look forward to learn from you and see how far we can take this platform together.
-
-Sincerely,  
-Tim and Darien
-
-
