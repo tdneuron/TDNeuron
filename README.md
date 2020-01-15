@@ -4,7 +4,7 @@ Welcome to our repository. Here you will find material on how to use the TDNeuro
 
 ## Why use TDNeuron?
 
-There are several deep learning libraries and frameworks available today. Why yet another one, such as TDNeuron? Here are some of the reasons why we think that TDNeuron is a fruitful endeavour.
+There are several deep learning libraries and frameworks available today. Why yet another one, such as TDNeuron? Here are some of the reasons.
 
 ## Education
 
