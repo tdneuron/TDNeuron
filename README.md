@@ -44,7 +44,7 @@ TDNeuron is released under a *Creative Commons Non-commercial* license. If you w
 
 ## Support
 
-TDNeuron works **only on Windows**. We use compute shaders, which are not supported in MacOS. 
+TDNeuron works **only on Windows**. We use compute shaders, which are currently not supported in MacOS. 
 
 ## Final words
 
