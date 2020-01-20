@@ -40,7 +40,7 @@ Since TDNeuron is fully build from scratch in TouchDesigner, with its own custom
 
 ## Commercial licenses available
 
-TDNeuron is released under a *Creative Commons Non-commercial* license. If you want to use TDNeuron in commercial projects, please contact [licenses@tdneuron.com](mailto:licenses@tdneuron.com) for specific licenses.
+TDNeuron is released under a *Creative Commons Non-commercial* license. If you want to use TDNeuron in commercial projects, please contact [tim@yfxlab.com](mailto:tim@yfxlab.com), [info@darienbrito.com](mailto:info@darienbrito.com) for specific licenses.
 
 ## Support
 
