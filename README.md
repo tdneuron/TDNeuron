@@ -16,7 +16,7 @@ The modelling interface of TDNeuron is completely TouchDesigner-based. It uses t
 
 ## GPU powered
 
-Most calculations of the deep Learning layers can be done in parallel. TDNeuron uses GLSL (pixel and compute) shaders, to achieve the best possible performance.
+Most calculations of the deep learning layers can be done in parallel. TDNeuron uses GLSL (pixel and compute) shaders, to achieve the best possible performance.
 
 ## Extended built-in layers
 
