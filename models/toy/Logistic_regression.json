@@ -1,0 +1,60 @@
+{
+  "Info": {
+    "Name": "Toy Conv2D",
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Module": "Toy_neurons",
+    "Seed": "0",
+    "Epoch": "65",
+    "Version": "1.0.0"
+  },
+  "Layers": [
+    {
+      "LayerName": "Linear1",
+      "NodeX": 200,
+      "NodeY": 0,
+      "Outputneurons": "1",
+      "Id": 1,
+      "Parent": "0",
+      "LayerType": "Linear"
+    },
+    {
+      "LayerName": "Activation1",
+      "NodeX": 400,
+      "NodeY": 0,
+      "Activationfunction": "Sigmoid",
+      "Id": 2,
+      "Parent": "1",
+      "LayerType": "Activation"
+    },
+    {
+      "Top": "Groundtruth",
+      "LayerName": "LossCrossEntropy1",
+      "NodeX": 625,
+      "NodeY": 0,
+      "Id": 3,
+      "Parent": "2",
+      "LayerType": "LossCrossEntropy"
+    }
+  ],
+  "Module": {
+    "Trainsetsize": "500",
+    "Randomizeminibatches": "0",
+    "Testsetsize": "100",
+    "Datatype": "0"
+  },
+  "Global": {
+    "Initializebias": "0.0",
+    "Regularizationparameter": "0.0",
+    "Momentumfactor": "0.949999988079071",
+    "Initializeweighty": "0.009999999776482582",
+    "Initializationtype": "Xavier",
+    "Initializeweightx": "-0.009999999776482582",
+    "Rmspropfactor": "0.9990000128746033",
+    "Learningrate": "0.1",
+    "Optimizer": "Adam",
+    "Regularization": "None",
+    "Minibatchsize": "10",
+    "Xavierinitialization": "2",
+    "Seed": "10.0"
+  }
+}

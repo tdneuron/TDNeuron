@@ -1,0 +1,170 @@
+{
+  "Info": {
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Name": "Toy Conv2D",
+    "Seed": "0",
+    "Epoch": "28",
+    "Version": "1.0.0",
+    "Module": "Toy_conv2d"
+  },
+  "Layers": [
+    {
+      "Padding": "0",
+      "Kernelsize": "5",
+      "LayerType": "Conv",
+      "Parent": "0",
+      "Kernels": "3",
+      "NodeY": 0,
+      "NodeX": 200,
+      "Id": 1,
+      "Conv2d": "1",
+      "LayerName": "Conv1",
+      "Stride": "1",
+      "Inputmaps": "1"
+    },
+    {
+      "NodeX": 400,
+      "Id": 2,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation1",
+      "Parent": "1",
+      "NodeY": 0
+    },
+    {
+      "Type": "Max",
+      "Padding": "0",
+      "Kernelsize": "2",
+      "LayerType": "Pool",
+      "Parent": "2",
+      "NodeY": 0,
+      "NodeX": 600,
+      "Id": 3,
+      "Conv2d": "1",
+      "LayerName": "Pool1",
+      "Stride": "2",
+      "Inputmaps": "3"
+    },
+    {
+      "Padding": "0",
+      "Kernelsize": "5",
+      "LayerType": "Conv",
+      "Parent": "3",
+      "Kernels": "5",
+      "NodeY": 0,
+      "NodeX": 800,
+      "Id": 4,
+      "Conv2d": "1",
+      "LayerName": "Conv2",
+      "Stride": "1",
+      "Inputmaps": "3"
+    },
+    {
+      "NodeX": 1000,
+      "Id": 5,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation2",
+      "Parent": "4",
+      "NodeY": 0
+    },
+    {
+      "Type": "Max",
+      "Padding": "0",
+      "Kernelsize": "2",
+      "LayerType": "Pool",
+      "Parent": "5",
+      "NodeY": 0,
+      "NodeX": 1200,
+      "Id": 6,
+      "Conv2d": "1",
+      "LayerName": "Pool2",
+      "Stride": "2",
+      "Inputmaps": "5"
+    },
+    {
+      "Padding": "0",
+      "Kernelsize": "5",
+      "LayerType": "Conv",
+      "Parent": "6",
+      "Kernels": "10",
+      "NodeY": 0,
+      "NodeX": 1400,
+      "Id": 7,
+      "Conv2d": "1",
+      "LayerName": "Conv3",
+      "Stride": "1",
+      "Inputmaps": "5"
+    },
+    {
+      "NodeX": 1600,
+      "Id": 8,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation3",
+      "Parent": "7",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 1800,
+      "Id": 9,
+      "LayerType": "Flatten",
+      "Conv2d": "1",
+      "Inputmaps": "10",
+      "LayerName": "Flatten1",
+      "Parent": "8",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 2000,
+      "Id": 10,
+      "LayerType": "Linear",
+      "Outputneurons": "5",
+      "LayerName": "Linear1",
+      "Parent": "9",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 2200,
+      "Id": 11,
+      "LayerType": "Softmax",
+      "LayerName": "Softmax1",
+      "Parent": "10",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 2400,
+      "Top": "Groundtruth",
+      "Id": 12,
+      "LayerType": "LossCrossEntropy",
+      "LayerName": "LossCrossEntropy1",
+      "Parent": "11",
+      "NodeY": 0
+    }
+  ],
+  "Module": {
+    "Imagesize": "32",
+    "Linethickness": "1.0",
+    "Testsetsize": "10",
+    "Datatype": "2",
+    "Trainsetsize": "1000",
+    "Noise": "0.0",
+    "Classes": "5",
+    "Randomizeminibatches": "0"
+  },
+  "Global": {
+    "Optimizer": "Adam",
+    "Initializebias": "0.0",
+    "Xavierinitialization": "2",
+    "Rmspropfactor": "0.999",
+    "Minibatchsize": "10",
+    "Learningrate": "0.001",
+    "Initializationtype": "Xavier",
+    "Initializeweighty": "0.01",
+    "Initializeweightx": "-0.01",
+    "Seed": "0.0",
+    "Momentumfactor": "0.95",
+    "Regularizationparameter": "0.0",
+    "Regularization": "None"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "Info": {
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Name": "Toy Conv1D",
+    "Seed": "0",
+    "Epoch": "296",
+    "Version": "1.0.0",
+    "Module": "Toy_branch"
+  },
+  "Layers": [
+    {
+      "NodeX": 200,
+      "Id": 1,
+      "LayerType": "Linear",
+      "Outputneurons": "10",
+      "LayerName": "Linear1",
+      "Parent": "0",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 400,
+      "Id": 2,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation1",
+      "Parent": "1",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 600,
+      "Id": 3,
+      "LayerType": "Linear",
+      "Outputneurons": "5",
+      "LayerName": "Linear2",
+      "Parent": "2",
+      "NodeY": 150
+    },
+    {
+      "NodeX": 800,
+      "Id": 4,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation2",
+      "Parent": "3",
+      "NodeY": 150
+    },
+    {
+      "NodeX": 1000,
+      "Id": 5,
+      "LayerType": "Linear",
+      "Outputneurons": "5",
+      "LayerName": "Linear4",
+      "Parent": "4",
+      "NodeY": 150
+    },
+    {
+      "NodeX": 1200,
+      "Id": 6,
+      "LayerType": "Softmax",
+      "LayerName": "Softmax1",
+      "Parent": "5",
+      "NodeY": 150
+    },
+    {
+      "NodeX": 1400,
+      "Top": "Groundtruth",
+      "Id": 7,
+      "LayerType": "LossCrossEntropy",
+      "LayerName": "LossCrossEntropy1",
+      "Parent": "6",
+      "NodeY": 150
+    },
+    {
+      "NodeX": 600,
+      "Id": 8,
+      "LayerType": "Linear",
+      "Outputneurons": "5",
+      "LayerName": "Linear3",
+      "Parent": "2",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 800,
+      "Id": 9,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish",
+      "LayerName": "Activation3",
+      "Parent": "8",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 1000,
+      "Id": 10,
+      "LayerType": "Linear",
+      "Outputneurons": "1",
+      "LayerName": "Linear5",
+      "Parent": "9",
+      "NodeY": 0
+    },
+    {
+      "NodeX": 1400,
+      "Id": 11,
+      "LayerType": "LossHuber",
+      "LayerName": "LossHuber1",
+      "Parent": "10",
+      "NodeY": 0
+    }
+  ],
+  "Module": {
+    "Trainsetsize": "1000",
+    "Testsetsize": "100",
+    "Randomizeminibatches": "0",
+    "Datatype": "0"
+  }
+}
