@@ -1,0 +1,144 @@
+{
+  "Info": {
+    "Version": "1",
+    "Module": "Mnist",
+    "Seed": "0",
+    "Epoch": "0",
+    "Name": "MNist classifier"
+  },
+  "Global": {
+    "Optimizer": "Adam",
+    "Initializebias": "0.0",
+    "Xavierinitialization": "2",
+    "Rmspropfactor": "0.999",
+    "Minibatchsize": "3",
+    "Learningrate": "0.001",
+    "Initializationtype": "Xavier",
+    "Initializeweighty": "0.01",
+    "Initializeweightx": "-0.01",
+    "Seed": "0.0",
+    "Momentumfactor": "0.95",
+    "Regularizationparameter": "0.0",
+    "Regularization": "None"
+  },
+  "Layers": [
+    {
+      "LayerType": "Conv",
+      "Padding": "2",
+      "Parent": "0",
+      "Id": 1,
+      "Kernelsize": "5",
+      "Conv2d": "1",
+      "Stride": "1",
+      "Inputmaps": "1",
+      "LayerName": "Conv1",
+      "Kernels": "6"
+    },
+    {
+      "LayerType": "Activation",
+      "Parent": "1",
+      "LayerName": "Activation1",
+      "Activationfunction": "Swish",
+      "Id": 2
+    },
+    {
+      "LayerType": "Pool",
+      "Padding": "0",
+      "Parent": "2",
+      "Id": 3,
+      "Kernelsize": "2",
+      "Conv2d": "1",
+      "Stride": "2",
+      "Type": "Max",
+      "Inputmaps": "6",
+      "LayerName": "Pool1"
+    },
+    {
+      "LayerType": "Conv",
+      "Padding": "0",
+      "Parent": "3",
+      "Id": 4,
+      "Kernelsize": "5",
+      "Conv2d": "1",
+      "Stride": "1",
+      "Inputmaps": "6",
+      "LayerName": "Conv2",
+      "Kernels": "16"
+    },
+    {
+      "LayerType": "Activation",
+      "Parent": "4",
+      "LayerName": "Activation2",
+      "Activationfunction": "Swish",
+      "Id": 5
+    },
+    {
+      "LayerType": "Pool",
+      "Padding": "0",
+      "Parent": "5",
+      "Id": 6,
+      "Kernelsize": "2",
+      "Conv2d": "1",
+      "Stride": "2",
+      "Type": "Max",
+      "Inputmaps": "16",
+      "LayerName": "Pool2"
+    },
+    {
+      "LayerType": "Flatten",
+      "Parent": "6",
+      "Id": 7,
+      "Conv2d": "1",
+      "Inputmaps": "16",
+      "LayerName": "Flatten1"
+    },
+    {
+      "LayerType": "Linear",
+      "Parent": "7",
+      "LayerName": "Linear2",
+      "Outputneurons": "120",
+      "Id": 8
+    },
+    {
+      "LayerType": "Activation",
+      "Parent": "8",
+      "LayerName": "Activation3",
+      "Activationfunction": "Swish",
+      "Id": 9
+    },
+    {
+      "LayerType": "Linear",
+      "Parent": "9",
+      "LayerName": "Linear3",
+      "Outputneurons": "84",
+      "Id": 10
+    },
+    {
+      "LayerType": "Activation",
+      "Parent": "10",
+      "LayerName": "Activation4",
+      "Activationfunction": "Swish",
+      "Id": 11
+    },
+    {
+      "LayerType": "Linear",
+      "Parent": "11",
+      "LayerName": "Linear1",
+      "Outputneurons": "10",
+      "Id": 12
+    },
+    {
+      "LayerType": "Softmax",
+      "Parent": "12",
+      "LayerName": "Softmax1",
+      "Id": 13
+    },
+    {
+      "LayerType": "LossCrossEntropy",
+      "Top": "../Module/Module/Input/out2_Train_GroundTruth",
+      "Parent": "13",
+      "LayerName": "LossCrossEntropy1",
+      "Id": 14
+    }
+  ]
+}

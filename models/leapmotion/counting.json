@@ -1,0 +1,79 @@
+{
+  "Global": {
+    "Initializebias": "0.0",
+    "Initializationtype": "Xavier",
+    "Optimizer": "Adam",
+    "Initializeweighty": "0.01",
+    "Xavierinitialization": "2",
+    "Momentumfactor": "0.95",
+    "Minibatchsize": "10",
+    "Regularizationparameter": "0.0",
+    "Learningrate": "0.001",
+    "Regularization": "None",
+    "Seed": "0.0",
+    "Rmspropfactor": "0.999",
+    "Initializeweightx": "-0.01"
+  },
+  "Module": {
+    "Livetest": "0",
+    "Datatype": "0",
+    "Trainsetpercentage": "0.8999999761581421",
+    "Randomizeminibatches": "1",
+    "Testsetpercentage": "0.10000000149011612",
+    "Classes": "11"
+  },
+  "Layers": [
+    {
+      "Parent": "0",
+      "Id": 1,
+      "LayerName": "Linear1",
+      "NodeY": 0,
+      "NodeX": 200,
+      "LayerType": "Linear",
+      "Outputneurons": "20"
+    },
+    {
+      "Parent": "1",
+      "Id": 2,
+      "LayerName": "Activation1",
+      "NodeY": 0,
+      "NodeX": 425,
+      "LayerType": "Activation",
+      "Activationfunction": "Swish"
+    },
+    {
+      "Parent": "2",
+      "Id": 3,
+      "LayerName": "Linear3",
+      "NodeY": 0,
+      "NodeX": 625,
+      "LayerType": "Linear",
+      "Outputneurons": "11"
+    },
+    {
+      "Parent": "3",
+      "Id": 4,
+      "LayerName": "Softmax1",
+      "NodeY": 0,
+      "NodeX": 825,
+      "LayerType": "Softmax"
+    },
+    {
+      "Parent": "4",
+      "Id": 5,
+      "LayerName": "LossCrossEntropy1",
+      "NodeY": 0,
+      "NodeX": 1050,
+      "LayerType": "LossCrossEntropy",
+      "Top": "Groundtruth"
+    }
+  ],
+  "Info": {
+    "Module": "Leapmotion",
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Name": "Toy Conv2D",
+    "Seed": "0",
+    "Epoch": "215",
+    "Version": "1.0.0"
+  }
+}

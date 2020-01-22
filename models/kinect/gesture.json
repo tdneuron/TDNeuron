@@ -1,0 +1,64 @@
+{
+  "Layers": [
+    {
+      "LayerType": "Linear",
+      "LayerName": "Linear1",
+      "Outputneurons": "50",
+      "Id": 1,
+      "NodeX": 200,
+      "NodeY": 0,
+      "Parent": "0"
+    },
+    {
+      "LayerType": "Activation",
+      "LayerName": "Activation1",
+      "Activationfunction": "Swish",
+      "Id": 2,
+      "NodeX": 425,
+      "NodeY": 0,
+      "Parent": "1"
+    },
+    {
+      "LayerType": "Linear",
+      "LayerName": "Linear3",
+      "Outputneurons": "8",
+      "Id": 3,
+      "NodeX": 625,
+      "NodeY": 0,
+      "Parent": "2"
+    },
+    {
+      "LayerType": "Softmax",
+      "LayerName": "Softmax1",
+      "Id": 4,
+      "NodeX": 825,
+      "NodeY": 0,
+      "Parent": "3"
+    },
+    {
+      "LayerType": "LossCrossEntropy",
+      "LayerName": "LossCrossEntropy1",
+      "Top": "Groundtruth",
+      "Id": 5,
+      "NodeX": 1050,
+      "NodeY": 0,
+      "Parent": "4"
+    }
+  ],
+  "Module": {
+    "Classes": "8",
+    "Livetest": "0",
+    "Trainsetpercentage": "0.9",
+    "Testsetpercentage": "0.1",
+    "Randomizeminibatches": "1",
+    "Datatype": "0"
+  },
+  "Info": {
+    "Module": "Kinect",
+    "Epoch": "2459",
+    "Version": "1.0.0",
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Name": "Toy Conv2D",
+    "Seed": "0"
+  }
+}
