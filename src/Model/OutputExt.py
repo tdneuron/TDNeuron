@@ -58,12 +58,13 @@ class Output:
 		p.owner = self.getModule("Output")
 
 	def OnWireChange(self, changeOp):
-		if len(changeOp.inputs) == 0: return
-		connectedOp = changeOp.inputs[0]
-
-		name = connectedOp.parent().name
-		path = self.opLossFunctions[name, "path"]
-		op.TDNeuron.op("Engine/Predictions").par.Predictionlayer = path.row-1
+		try:
+			connectedOp = changeOp.inputs[0]
+			name = connectedOp.parent().name
+			path = self.opLossFunctions[name, "path"]
+			op.TDNeuron.op("Engine/Predictions").par.Predictionlayer = path.row-1
+		except:
+			pass
 
 	def getTopPath(self):
 		data = self.ownerComp.par.Datatype.eval()
