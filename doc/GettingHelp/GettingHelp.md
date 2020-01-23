@@ -6,7 +6,7 @@ It can be overwhelming to navigate all the concepts required to understand machi
 
 For general questions that you may have, please use the issue tracker on our Github repository, create a ticket and assign it the "question" label. Write a clear description of your inquiry and provide information that will allow us to answer it. We will try to answer your question promptly:
 
-https://github.com/tdneuron/TDneuron/issues
+https://github.com/tdneuron/TDNeuron/issues
 
 ### Help on creating networks
 
@@ -28,7 +28,9 @@ https://ai.darienbrito.com/category/tutorials/
 
 For general issues such as bugs, feature requests and proposed enhancements, please use the issue tracker of TDNeuron in our Github repository:
 
-https://github.com/tdneuron/TDneuron/issues
+https://github.com/tdneuron/TDNeuron/issues
+
+
 
 
 

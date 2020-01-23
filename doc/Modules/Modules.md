@@ -13,6 +13,7 @@ TDNeuron provides a number of modules ready for users to try. These consists on 
 - **Classes**: 10
 - **Type**: floats
 
+
 ### Myo 
 ---
 - **Origin**: Myo sensor

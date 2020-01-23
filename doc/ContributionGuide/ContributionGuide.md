@@ -6,7 +6,7 @@ TDNeuron is an open-source effort created with the idea that it will be grown an
 
 If you wish to contribute to TDNeuron as a developer, please refer to the "Developers guide" first to get familiar with our conventions. Proceed by creating a ticket in the issue tracker:
 
-https://github.com/tdneuron/TDneuron/issues
+https://github.com/tdneuron/TDNeuron/issues
 
 Once the ticket is there, please assign yourself to the ticket and clearly mark with a label what it is in nature, e.g. "enhancement", "feature request", etc.
 
@@ -25,5 +25,7 @@ You may also wish to contribute with a model you have created, or a module of in
 ### Others
 
 If there is any other type of contribution you would like to make, create an issue in the issue tracker with the label "contribution proposal". We would be happy to read from you.
+
+
 
 
