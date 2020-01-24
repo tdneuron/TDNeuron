@@ -1,0 +1,94 @@
+{
+  "Global": {
+    "Regularizationparameter": "0.1",
+    "Minibatchsize": "16",
+    "Rmspropfactor": "0.9990000128746033",
+    "Seed": "0.0",
+    "Optimizer": "Adam",
+    "Initializebias": "0.0",
+    "Initializeweightx": "-0.009999999776482582",
+    "Regularization": "L2",
+    "Initializationtype": "Xavier",
+    "Momentumfactor": "0.949999988079071",
+    "Xavierinitialization": "2",
+    "Initializeweighty": "0.009999999776482582",
+    "Learningrate": "0.01"
+  },
+  "Info": {
+    "Module": "Mnist",
+    "Name": "Toy Conv2D",
+    "Seed": "0",
+    "Epoch": "0",
+    "Version": "1.0.0",
+    "Author": "Tim Gerritsen <tim@yfxlab.com>"
+  },
+  "Layers": [
+    {
+      "NodeX": 200,
+      "NodeY": 0,
+      "Id": 1,
+      "Outputneurons": "750",
+      "LayerName": "Linear1",
+      "Parent": "0",
+      "LayerType": "Linear"
+    },
+    {
+      "NodeX": 400,
+      "NodeY": 0,
+      "Activationfunction": "Swish",
+      "Id": 2,
+      "LayerName": "Activation1",
+      "Parent": "1",
+      "LayerType": "Activation"
+    },
+    {
+      "NodeX": 600,
+      "NodeY": 0,
+      "Id": 3,
+      "Outputneurons": "50",
+      "LayerName": "Linear3",
+      "Parent": "2",
+      "LayerType": "Linear"
+    },
+    {
+      "NodeX": 800,
+      "NodeY": 0,
+      "Activationfunction": "Swish",
+      "Id": 4,
+      "LayerName": "Activation2",
+      "Parent": "3",
+      "LayerType": "Activation"
+    },
+    {
+      "NodeX": 1000,
+      "NodeY": 0,
+      "Id": 5,
+      "Outputneurons": "10",
+      "LayerName": "Linear2",
+      "Parent": "4",
+      "LayerType": "Linear"
+    },
+    {
+      "NodeX": 1200,
+      "NodeY": 0,
+      "Id": 6,
+      "LayerName": "Softmax1",
+      "Parent": "5",
+      "LayerType": "Softmax"
+    },
+    {
+      "NodeX": 1400,
+      "NodeY": 0,
+      "Id": 7,
+      "Top": "Groundtruth",
+      "LayerName": "LossCrossEntropy1",
+      "Parent": "6",
+      "LayerType": "LossCrossEntropy"
+    }
+  ],
+  "Module": {
+    "Randomizeminibatches": "1",
+    "Testsetsize": "16",
+    "Texture3d": "0"
+  }
+}
