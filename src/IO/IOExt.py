@@ -165,6 +165,9 @@ class IO:
 		if "Global" in self.model:
 			self.setParameters(self.opEngine, self.model["Global"])
 
+		# Disable test mode in case is active
+		self.opEngine.par.Testing = False
+
 		# Set session
 		try:
 			op.TDNeuron.op('Session').Set(self.model)
