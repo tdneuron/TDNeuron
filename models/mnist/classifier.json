@@ -1,0 +1,94 @@
+{
+  "Info": {
+    "Module": "Mnist",
+    "Epoch": "2",
+    "Name": "Toy Conv2D",
+    "Version": "1.0.0",
+    "Seed": "0",
+    "Author": "Tim Gerritsen <tim@yfxlab.com>"
+  },
+  "Global": {
+    "Learningrate": "0.0001",
+    "Initializationtype": "Xavier",
+    "Minibatchsize": "10",
+    "Initializebias": "0.0",
+    "Seed": "0.0",
+    "Initializeweightx": "-0.009999999776482582",
+    "Momentumfactor": "0.949999988079071",
+    "Initializeweighty": "0.009999999776482582",
+    "Optimizer": "Adam",
+    "Regularization": "None",
+    "Xavierinitialization": "2",
+    "Rmspropfactor": "0.9990000128746033",
+    "Regularizationparameter": "0.0"
+  },
+  "Layers": [
+    {
+      "LayerName": "Linear1",
+      "NodeY": 0,
+      "Parent": "0",
+      "Id": 1,
+      "Outputneurons": "750",
+      "LayerType": "Linear",
+      "NodeX": 200
+    },
+    {
+      "LayerName": "Activation1",
+      "NodeY": 0,
+      "Parent": "1",
+      "Id": 2,
+      "LayerType": "Activation",
+      "NodeX": 400,
+      "Activationfunction": "Swish"
+    },
+    {
+      "LayerName": "Linear3",
+      "NodeY": 0,
+      "Parent": "2",
+      "Id": 3,
+      "Outputneurons": "50",
+      "LayerType": "Linear",
+      "NodeX": 600
+    },
+    {
+      "LayerName": "Activation2",
+      "NodeY": 0,
+      "Parent": "3",
+      "Id": 4,
+      "LayerType": "Activation",
+      "NodeX": 800,
+      "Activationfunction": "Swish"
+    },
+    {
+      "LayerName": "Linear2",
+      "NodeY": 0,
+      "Parent": "4",
+      "Id": 5,
+      "Outputneurons": "10",
+      "LayerType": "Linear",
+      "NodeX": 1000
+    },
+    {
+      "LayerName": "Softmax1",
+      "NodeY": 0,
+      "Parent": "5",
+      "Id": 6,
+      "LayerType": "Softmax",
+      "NodeX": 1200
+    },
+    {
+      "LayerName": "LossCrossEntropy1",
+      "NodeY": 0,
+      "Parent": "6",
+      "Id": 7,
+      "Top": "Groundtruth",
+      "LayerType": "LossCrossEntropy",
+      "NodeX": 1400
+    }
+  ],
+  "Module": {
+    "Texture3d": "0",
+    "Randomizeminibatches": "1",
+    "Testsetsize": "16"
+  }
+}
