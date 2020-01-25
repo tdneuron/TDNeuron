@@ -42,6 +42,17 @@ Since TDNeuron is fully build from scratch in TouchDesigner, with its own custom
 
 TDNeuron is released under a *GNU Public License v3*. If you want to use TDNeuron closed source in commercial projects, please contact [tim@yfxlab.com](mailto:tim@yfxlab.com), [info@darienbrito.com](mailto:info@darienbrito.com) for specific licenses.
 
+## Limitations and disclaimer
+
+Here we list some importation limitations of TDNeuron:
+
+* TDNeuron is Windows only (it uses compute shaders, which are not supported in MacOS
+* The platform state is highly experimental and subjected to many major changes still
+* TDNeuron is by no means state of the art (yet)
+* There are limitations on the quantity of input data (when too big, TouchDesigner cannot load it at once)
+* There are limitations on the lenght of input data (dependant on how big a texture your GPU can handle)
+* As with every ML platform, the quality of input data quality is responsibility of the user. 
+
 ## Support
 
 TDNeuron works **only on Windows**. We use compute shaders, which are currently not supported in MacOS. 
