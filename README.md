@@ -1,8 +1,5 @@
 # TDNeuron
 
-<<<<<<< HEAD
-The beta version of TDNeuron will be released on Sunday January 26th 2020 at [Professional Touchdesigner Alliance - Amsterdam](https://www.eventbrite.com/e/touchdesigner-workshop-professional-touchdesigner-alliance-amsterdam-tickets-86900280077)
-=======
 Welcome to our repository. Here you will find material on how to use the TDNeuron system to implement machine learning within [Derivative's TouchDesigner](https://www.derivative.ca/).
 
 ## Why use TDNeuron?
@@ -56,10 +53,6 @@ Here we list some importation limitations of TDNeuron:
 * There are limitations on the lenght of input data (dependant on how big a texture your GPU can handle)
 * As with every ML platform, the quality of input data quality is responsibility of the user. 
 
-## Support
-
-TDNeuron works **only on Windows**. We use compute shaders, which are currently not supported in MacOS. 
-
 ## Final words
 
 We assume that you are already proficient with TouchDesigner. To get you started with TDNeuron, we offer a help module that you may consult at any point. Along with it, we offer a gentle *Introduction to machine learning* that you may want to follow as well. In there, we built a simplified version of a neural network with CHOPs, with step by step explanations. 
@@ -67,4 +60,3 @@ We assume that you are already proficient with TouchDesigner. To get you started
 To use TDNeuron you do not necessarily need to know GLSL or shaders, although to make the most out of it you need to have a fair understanding of the basics.
 
 We strongly believe that knowledge should be shared and hope that TDNeuron can help others in their first steps in machine learning. We look forward to learn from you and see how far we can take this platform together.
->>>>>>> staging
