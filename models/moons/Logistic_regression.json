@@ -1,0 +1,96 @@
+{
+  "Layers": [
+    {
+      "LayerName": "Linear1",
+      "Id": 1,
+      "NodeY": 0,
+      "Parent": "0",
+      "LayerType": "Linear",
+      "Outputneurons": "30",
+      "NodeX": 250
+    },
+    {
+      "LayerName": "Activation1",
+      "Id": 2,
+      "NodeY": 0,
+      "Activationfunction": "Swish",
+      "Parent": "1",
+      "LayerType": "Activation",
+      "NodeX": 475
+    },
+    {
+      "LayerName": "Linear3",
+      "Id": 3,
+      "NodeY": 0,
+      "Parent": "2",
+      "LayerType": "Linear",
+      "Outputneurons": "10",
+      "NodeX": 700
+    },
+    {
+      "LayerName": "Activation3",
+      "Id": 4,
+      "NodeY": 0,
+      "Activationfunction": "Swish",
+      "Parent": "3",
+      "LayerType": "Activation",
+      "NodeX": 950
+    },
+    {
+      "LayerName": "Linear2",
+      "Id": 5,
+      "NodeY": 0,
+      "Parent": "4",
+      "LayerType": "Linear",
+      "Outputneurons": "1",
+      "NodeX": 1175
+    },
+    {
+      "LayerName": "Activation2",
+      "Id": 6,
+      "NodeY": 0,
+      "Activationfunction": "Sigmoid",
+      "Parent": "5",
+      "LayerType": "Activation",
+      "NodeX": 1375
+    },
+    {
+      "LayerName": "LossCrossEntropy1",
+      "Id": 7,
+      "NodeY": 0,
+      "Top": "Groundtruth",
+      "Parent": "6",
+      "LayerType": "LossCrossEntropy",
+      "NodeX": 1600
+    }
+  ],
+  "Module": {
+    "Datatype": "0",
+    "Trainsetsize": "900",
+    "Testsetsize": "100",
+    "Randomizeminibatches": "0"
+  },
+  "Info": {
+    "Author": "Tim Gerritsen <tim@yfxlab.com>",
+    "Name": "Toy Conv2D",
+    "Version": "1.0.0",
+    "Epoch": "25",
+    "Seed": "0",
+    "Module": "Moons"
+  },
+  "Global": {
+    "Momentumfactor": "0.949999988079071",
+    "Rmspropfactor": "0.9990000128746033",
+    "Initializationtype": "Xavier",
+    "Minibatchsize": "20",
+    "Initializebias": "0.0",
+    "Regularization": "None",
+    "Learningrate": "0.01",
+    "Initializeweighty": "0.009999999776482582",
+    "Seed": "10.0",
+    "Optimizer": "Adam",
+    "Initializeweightx": "-0.009999999776482582",
+    "Regularizationparameter": "0.0",
+    "Xavierinitialization": "2"
+  }
+}
