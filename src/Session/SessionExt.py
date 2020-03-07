@@ -49,18 +49,18 @@ class Session:
 		# Gather general info
 		info = { row[0].val : row[1].val for row in self.opModel.rows() }
 
-		if update:
-			# Update and gather module info
-			self.opModule.clear()
-			parameters = self.getParameters(op.TDNeuron.op("Module/Module"), ["Config"])
-			for p in parameters.items():
-				self.opModule.appendRow([p[0], p[1]])
+		# if update:
+		# 	# Update and gather module info
+		# 	self.opModule.clear()
+		# 	parameters = self.getParameters(op.TDNeuron.op("Module/Module"), ["Config"])
+		# 	for p in parameters.items():
+		# 		self.opModule.appendRow([p[0], p[1]])
 
-			# Update and gather global info
-			self.opGlobal.clear()
-			parameters = self.getParameters(op.TDNeuron.op("Engine"), ["Parameters"])
-			for p in parameters.items():
-				self.opGlobal.appendRow([p[0], p[1]])
+		# 	# Update and gather global info
+		# 	self.opGlobal.clear()
+		# 	parameters = self.getParameters(op.TDNeuron.op("Engine"), ["Parameters"])
+		# 	for p in parameters.items():
+		# 		self.opGlobal.appendRow([p[0], p[1]])
 
 		module = { row[0].val : row[1].val for row in self.opModule.rows() }
 
@@ -101,6 +101,7 @@ class Session:
 		"""
 		This method writes a dictionary to specified DAT.
 		"""
+		dat.setSize(dat.numRows,2)
 		for k in dict.keys():
 			try:
 				val = dict[k]
@@ -116,11 +117,11 @@ class Session:
 		self.writeDAT(self.opModel, model["Info"])
 
 		if "Module" in model:
-			self.opModule.clear()
+			self.opModule.clear(keepFirstCol=True)
 			self.writeDAT(self.opModule, model["Module"])
 
 		if "Global" in model:
-			self.opGlobal.clear()
+			self.opGlobal.clear(keepFirstCol=True)
 			self.writeDAT(self.opGlobal, model["Global"])
 
 		# Prepare tables

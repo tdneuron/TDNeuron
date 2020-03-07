@@ -45,6 +45,6 @@ void main()
 	float prediction = texelFetch(sTD2DInputs[TEX_INPUT], xy, 0).x;
 #endif
 	float z = (prediction - groundTruth);
-	float gradient = z/(abs(z)*samples + EPSILON);
-	fragGradient = gradient;
+	float gradient = z/(abs(z) + EPSILON);
+	fragGradient = gradient/samples;
 }
