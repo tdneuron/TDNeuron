@@ -50,12 +50,8 @@ Here we list some importation limitations of TDNeuron:
 * The platform state is highly experimental and subjected to many major changes still
 * TDNeuron is by no means state of the art (yet)
 * There are limitations on the quantity of input data (when too big, TouchDesigner cannot load it at once)
-* There are limitations on the lenght of input data (dependant on how big a texture your GPU can handle)
+* There are limitations on the length of input data (dependant on how big a texture your GPU can handle)
 * As with every ML platform, the quality of input data quality is responsibility of the user. 
-
-## Support
-
-TDNeuron works **only on Windows**. We use compute shaders, which are currently not supported in MacOS. 
 
 ## Final words
 
