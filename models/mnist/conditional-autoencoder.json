@@ -1,0 +1,150 @@
+{
+  "Info": {
+    "Version": "1.0.0",
+    "Epoch": "14",
+    "Name": "MNist conditional autoencoder",
+    "Author": "TDNeuron",
+    "Seed": "0",
+    "Module": "Mnist"
+  },
+  "Module": {
+    "Testsetsize": "16",
+    "Texture3d": "0",
+    "Randomizeminibatches": "1"
+  },
+  "Global": {
+    "Learningrate": "0.001",
+    "Minibatchsize": "256",
+    "Seed": "0.0",
+    "Initializeweightx": "-0.001",
+    "Initializeweighty": "0.001",
+    "Initializebias": "0.0",
+    "Initializationtype": "Xavier",
+    "Xavierinitialization": "2",
+    "Optimizer": "Adam",
+    "Momentumfactor": "0.95",
+    "Rmspropfactor": "0.999",
+    "Gradientascent": "0",
+    "Regularization": "None",
+    "Regularizationparameter": "0.0"
+  },
+  "Layers": [
+    {
+      "Id": 1,
+      "LayerName": "Linear1",
+      "LayerType": "Linear",
+      "Parent": "0",
+      "NodeX": 200,
+      "NodeY": 0,
+      "Outputneurons": "500"
+    },
+    {
+      "Id": 2,
+      "LayerName": "Activation1",
+      "LayerType": "Activation",
+      "Parent": "1",
+      "NodeX": 400,
+      "NodeY": 0,
+      "Activationfunction": "Lrelu"
+    },
+    {
+      "Id": 3,
+      "LayerName": "Linear3",
+      "LayerType": "Linear",
+      "Parent": "2",
+      "NodeX": 600,
+      "NodeY": 0,
+      "Outputneurons": "50"
+    },
+    {
+      "Id": 4,
+      "LayerName": "Activation2",
+      "LayerType": "Activation",
+      "Parent": "3",
+      "NodeX": 800,
+      "NodeY": 0,
+      "Activationfunction": "Lrelu"
+    },
+    {
+      "Id": 5,
+      "LayerName": "Linear2",
+      "LayerType": "Linear",
+      "Parent": "4",
+      "NodeX": 1000,
+      "NodeY": 0,
+      "Outputneurons": "10"
+    },
+    {
+      "Id": 6,
+      "LayerName": "Softmax1",
+      "LayerType": "Softmax",
+      "Parent": "5",
+      "NodeX": 1200,
+      "NodeY": 0
+    },
+    {
+      "Id": 7,
+      "LayerName": "Linear4",
+      "LayerType": "Linear",
+      "Parent": "6",
+      "NodeX": 1450,
+      "NodeY": 0,
+      "Outputneurons": "50"
+    },
+    {
+      "Id": 8,
+      "LayerName": "Activation3",
+      "LayerType": "Activation",
+      "Parent": "7",
+      "NodeX": 1650,
+      "NodeY": 0,
+      "Activationfunction": "Lrelu"
+    },
+    {
+      "Id": 9,
+      "LayerName": "Linear5",
+      "LayerType": "Linear",
+      "Parent": "8",
+      "NodeX": 1850,
+      "NodeY": 0,
+      "Outputneurons": "500"
+    },
+    {
+      "Id": 10,
+      "LayerName": "Activation4",
+      "LayerType": "Activation",
+      "Parent": "9",
+      "NodeX": 2075,
+      "NodeY": 0,
+      "Activationfunction": "Lrelu"
+    },
+    {
+      "Id": 11,
+      "LayerName": "Linear6",
+      "LayerType": "Linear",
+      "Parent": "10",
+      "NodeX": 2300,
+      "NodeY": 0,
+      "Outputneurons": "784"
+    },
+    {
+      "Id": 12,
+      "LayerName": "LossHuber1",
+      "LayerType": "LossHuber",
+      "Parent": "11",
+      "NodeX": 2500,
+      "NodeY": 0,
+      "Top": "/TDNeuron/Engine/Input",
+      "Huberdelta": "1.0"
+    },
+    {
+      "Id": 13,
+      "LayerName": "LossCrossEntropy1",
+      "LayerType": "LossCrossEntropy",
+      "Parent": "6",
+      "NodeX": 1450,
+      "NodeY": 150,
+      "Top": "Groundtruth"
+    }
+  ]
+}

@@ -31,6 +31,7 @@ ____________________________________________________________________*/
 
 uniform float uLearningRate; // The speed the weight gets updated
 uniform int uOptimizer; // Type of optimizer (SGD, RMSProp, Adam)
+uniform int uGradientAscent; // 1 when ascending gradient instead of descending
 uniform float uMomentumFactor; // Amount of momentum (0 is normal SGD)
 uniform float uRMSPropFactor; // Amount of RMSProp
 uniform vec2 uRegularization; // Type and amount of regularization
@@ -81,5 +82,5 @@ float Optimize(float weightUpdate, float weight, inout float velocity, inout flo
 	//////////////////////////////
 	// UPDATE WEIGHTS
 	//////////////////////////////
-	return weight - uLearningRate * weightUpdate; // Decrease the weight 
+	return weight + sign(uGradientAscent - 0.5) * uLearningRate * weightUpdate; // Decrease the weight 
 }

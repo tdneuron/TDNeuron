@@ -22,6 +22,7 @@ class Sys:
 		self.ownerComp = ownerComp
 		self.opModule = op.TDNeuron.op("Module")
 		self.opModel = op.TDNeuron.op("Model")
+		self.opEngine = op.TDNeuron.op("Engine")
 		self.opSession = op.TDNeuron.op("Session")
 		self.opLayers = op.TDNeuron.op("Layers")
 		self.opTemplates = ownerComp.op("Templates")
@@ -149,6 +150,14 @@ class Sys:
 		parameters = self.getParameters(self.opModule.op("Module"), ["Config"])
 		for p in parameters.items():
 			m.appendRow([p[0], p[1]])
+
+		m = self.opSession.op("Global")
+		parameters = self.getParameters(self.opEngine, ["Parameters"])
+		for p in parameters.items():
+			try:
+				m[p[0],1] = p[1]
+			except:
+				pass
 
 	def clearSession(self):
 		self.opSession.op("Layers").clear(keepFirstRow=True)
